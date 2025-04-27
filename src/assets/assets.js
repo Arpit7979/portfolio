@@ -10,6 +10,10 @@ import node from "./node.svg";
 import mongodb from "./mongodb.svg";
 import react from "./react.svg";
 import tailwind from "./tailwind.svg";
+import auth from "./auth.png";
+import arkshop from "./arkshop.png";
+import github from "./github.png";
+import linkedin from "./linkedin.png";
 
 export const assets = {
   arrow_icon,
@@ -24,4 +28,8 @@ export const assets = {
   mongodb,
   react,
   tailwind,
+  auth,
+  arkshop,
+  github,
+  linkedin,
 };

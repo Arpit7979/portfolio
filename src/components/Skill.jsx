@@ -12,26 +12,40 @@ const images = [
   assets.next,
 ];
 
-const Skill = () => {
+const Skill = ({ skillRef }) => {
   return (
-    <div className="bg-slate-900 text-white p-20 flex flex-col items-center">
-      <h1 className="text-5xl font-bold text-[#ffde59] mb-13">MY SKILLS</h1>
-      <div className="flex gap-7">
-        <div className="grid grid-cols-4 gap-2">
-          {images.map((el, i) => (
-            <Card name={el} key={i} />
-          ))}
+    <section ref={skillRef}>
+      <div className="bg-slate-900 text-white md:py-20 md:px-35 p-5 flex flex-col items-center">
+        <h1 className="md:text-5xl text-4xl font-bold text-[#ffde59] mb-13">
+          MY SKILLS
+        </h1>
+        <div className="flex md:flex-row flex-col gap-7 w-full">
+          <div className="grid md:grid-cols-4 grid-cols-2 gap-2">
+            {images.map((el, i) => (
+              <Card name={el} key={i} />
+            ))}
+          </div>
+          <div className="md:w-100 w-full bg-slate-800 flex flex-col items-center justify-center gap-3 rounded-lg md:p-0 p-5">
+            <h3 className="md:text-5xl text-3xl font-bold w-50 text-center">
+              For More Details
+            </h3>
+            <button className=" bg-[#ffde59] p-3 rounded-full cursor-pointer border-1 border-black text-black font-bold">
+              Download My CV
+            </button>
+          </div>
         </div>
-        <div className="w-100 bg-slate-800 flex flex-col items-center justify-center gap-3 rounded-lg">
-          <h3 className="text-5xl font-bold w-50 text-center">
-            For More Details
-          </h3>
-          <button className=" bg-[#ffde59] p-3 rounded-full cursor-pointer border-1 border-black text-black font-bold">
-            Download My CV
-          </button>
+        <div className="bg-slate-800 p-10 w-full flex flex-col items-center gap-15 mt-30 rounded-lg shadow-xl/100 inset-shadow-sm inset-shadow-indigo-100">
+          <h1 className="md:text-3xl text-2xl font-bold text-[#ffde59]">
+            ADDITIONAL SKILLS
+          </h1>
+          <div className="flex md:gap-15 gap-4 md:flex-nowrap flex-wrap">
+            {images.map((image, i) => (
+              <img className="w-15" src={image} key={i} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
