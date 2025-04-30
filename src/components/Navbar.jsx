@@ -1,4 +1,5 @@
 import { assets } from "../assets/assets";
+import { motion } from "framer-motion";
 
 const Navbar = ({
   ScrollToContact,
@@ -29,7 +30,11 @@ const Navbar = ({
           PROJECTS
         </h2>
       </div>
-      <div className="flex gap-2 border-1 rounded-full cursor-pointer p-0.5 md:text-lg text-xs">
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="flex gap-2 border-1 rounded-full cursor-pointer p-0.5 md:text-lg text-xs"
+      >
         <button
           onClick={() => ScrollToContact()}
           className="md:py-2 md:px-4 py-1 px-2 cursor-pointer"
@@ -42,7 +47,7 @@ const Navbar = ({
         >
           <img src={assets.arrow_icon} alt="" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

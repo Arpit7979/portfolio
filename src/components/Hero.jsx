@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { motion } from "framer-motion";
 
 const Hero = ({ ScrollToProject }) => {
   return (
@@ -44,12 +45,14 @@ const Hero = ({ ScrollToProject }) => {
           </div>
         </div>
       </div>
-      <button
+      <motion.button
         onClick={() => ScrollToProject()}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
         className="md:block hidden absolute bottom-4 bg-[#ffde59] p-3 rounded-full cursor-pointer border-1 border-black text-black font-bold"
       >
         MY PROJECTS
-      </button>
+      </motion.button>
     </div>
   );
 };

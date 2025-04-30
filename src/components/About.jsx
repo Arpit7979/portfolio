@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { motion } from "framer-motion";
 
 const About = ({ aboutRef, ScrollToProject }) => {
   return (
@@ -8,13 +9,18 @@ const About = ({ aboutRef, ScrollToProject }) => {
         <h1 className="md:text-5xl text-4xl font-bold text-[#ffde59] mb-5">
           WHO AM I?
         </h1>
-        <div className="text-white pt-10 md:w-1/3 w-[70%]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-white pt-10 md:w-1/3 w-[70%]"
+        >
           <h3>I am full-stack Website Developer specialized in React.js</h3>
           <h3 className="pt-5">
             Programming is my passion, that's the reasion I am working at the
             time of my academic career
           </h3>
-        </div>
+        </motion.div>
         <img
           className="md:block hidden h-70 absolute left-43 rotate-12 rounded-lg shadow-xl/100 inset-shadow-sm inset-shadow-indigo-100"
           src={assets.arpit1}

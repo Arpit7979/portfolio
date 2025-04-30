@@ -29,9 +29,11 @@ const Skill = ({ skillRef }) => {
             <h3 className="md:text-5xl text-3xl font-bold w-50 text-center">
               For More Details
             </h3>
-            <button className=" bg-[#ffde59] p-3 rounded-full cursor-pointer border-1 border-black text-black font-bold">
-              Download My CV
-            </button>
+            <a href="/arpit_cv.pdf" download="MyFile.pdf">
+              <button className=" bg-[#ffde59] p-3 rounded-full cursor-pointer border-1 border-black text-black font-bold">
+                Download My CV
+              </button>
+            </a>
           </div>
         </div>
         <div className="bg-slate-800 p-10 w-full flex flex-col items-center gap-15 mt-30 rounded-lg shadow-xl/100 inset-shadow-sm inset-shadow-indigo-100">
