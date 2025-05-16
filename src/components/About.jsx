@@ -17,7 +17,7 @@ const About = ({ aboutRef, ScrollToProject }) => {
         >
           <h3>I am full-stack Website Developer specialized in React.js</h3>
           <h3 className="pt-5">
-            Programming is my passion, that's the reasion I am working at the
+            Programming is my passion, that's the reason I am working at the
             time of my academic career
           </h3>
         </motion.div>

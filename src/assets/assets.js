@@ -14,6 +14,12 @@ import auth from "./auth.png";
 import arkshop from "./arkshop.png";
 import github from "./github.png";
 import linkedin from "./linkedin.png";
+import bootstrap from "./bootstrap.png";
+import ts from "./ts.png";
+import mongoose from "./mongoose.png";
+import redux from "./redux.png";
+import course from "./course.png";
+import blog from "./blog.png";
 
 export const assets = {
   arrow_icon,
@@ -32,4 +38,10 @@ export const assets = {
   arkshop,
   github,
   linkedin,
+  mongoose,
+  redux,
+  ts,
+  bootstrap,
+  course,
+  blog,
 };

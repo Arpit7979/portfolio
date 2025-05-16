@@ -12,6 +12,13 @@ const images = [
   assets.next,
 ];
 
+const otherImages = [
+  assets.ts,
+  assets.bootstrap,
+  assets.mongoose,
+  assets.redux,
+];
+
 const Skill = ({ skillRef }) => {
   return (
     <section ref={skillRef}>
@@ -36,12 +43,12 @@ const Skill = ({ skillRef }) => {
             </a>
           </div>
         </div>
-        <div className="bg-slate-800 p-10 w-full flex flex-col items-center gap-15 mt-30 rounded-lg shadow-xl/100 inset-shadow-sm inset-shadow-indigo-100">
+        <div className="bg-slate-800 p-10 w-full flex flex-col items-center md:gap-15 gap-5 mt-30 rounded-lg shadow-xl/100 inset-shadow-sm inset-shadow-indigo-100">
           <h1 className="md:text-3xl text-2xl font-bold text-[#ffde59]">
             ADDITIONAL SKILLS
           </h1>
           <div className="flex md:gap-15 gap-4 md:flex-nowrap flex-wrap">
-            {images.map((image, i) => (
+            {otherImages.map((image, i) => (
               <img className="w-15" src={image} key={i} />
             ))}
           </div>
